@@ -1,5 +1,5 @@
-.cpcache/
-.shadow-cljs/
-node_modules/
-package-lock.json
-public/js
+**/.cpcache/
+ui/.shadow-cljs/
+ui/node_modules/
+ui/package-lock.json
+ui/public/js
