@@ -1,5 +1,5 @@
 (ns ccviz.core
-  (:require [reagent.dom]
+  (:require [reagent.dom :as rdom]
             [re-frame.core :as rf]
             [clojure.string :as str]))
 
@@ -83,8 +83,8 @@
 
 (defn render
   []
-  (reagent.dom/render [ui]
-                      (js/document.getElementById "app")))
+  (rdom/render [ui]
+               (js/document.getElementById "app")))
 
 (defn ^:dev/after-load clear-cache-and-render!
   []
@@ -98,4 +98,3 @@
   []
   (rf/dispatch-sync [:initialize]) ;; put a value into application state
   (render))                         ;; mount the application's ui into '<div id="app" />'
-
