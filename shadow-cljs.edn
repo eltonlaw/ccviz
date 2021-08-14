@@ -1,0 +1,9 @@
+{:deps true
+ :source-paths ["src"]
+ :dev-http {8080 "resources/public"}
+ :builds
+ {:app {:target :browser
+        :output-dir "resources/public/js"
+        ;; start a basic dev http server to serve static assets
+        :asset-path "/js"
+        :modules {:main {:entries [ccviz.core]}}}}}

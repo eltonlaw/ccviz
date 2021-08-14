@@ -1,2 +1,0 @@
-^{:watch-dirs ["src/cljs" "dev/cljs"]}
-{:main ccviz.core}
