@@ -3,6 +3,8 @@
             [re-frame.core :as rf]
             [clojure.string :as str]))
 
+(enable-console-print!)
+
 ;; A detailed walk-through of this source code is provided in the docs:
 ;; https://day8.github.io/re-frame/dominoes-live/
 
@@ -98,3 +100,5 @@
   []
   (rf/dispatch-sync [:initialize]) ;; put a value into application state
   (render))                         ;; mount the application's ui into '<div id="app" />'
+
+(main)
